@@ -132,7 +132,7 @@
 
 - (void)setUpToolbar
 {
-    self.btColour = [[UIBarButtonItem alloc] initWithTitle:@"Colour"
+    self.btColour = [[UIBarButtonItem alloc] initWithTitle:@"Color"
                                                      style:UIBarButtonItemStylePlain
                                                     target:self
                                                     action:@selector(toggleColour:event:)];
@@ -297,7 +297,7 @@
 
 - (void)colourChanged:(id)sender
 {
-    NSLog(@"Colour changed.");
+    NSLog(@"Color changed.");
     [self hideColourButtons];
     self.colour = [(UIButton *)sender backgroundColor];
 
